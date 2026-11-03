@@ -67,9 +67,9 @@ function calculateRepoStats(repos)
     }
    
     return {
-        minStar:Math.min(...res),
-        maxStar:Math.max(...res),
-        avgStar:Math.floor(sum/res.length),
+        minStars:Math.min(...res),
+        maxStars:Math.max(...res),
+        avgStars:Math.floor(sum/res.length),
         variaceScore: Math.abs(Math.min(...res)-Math.max(...res))
     }
 }
