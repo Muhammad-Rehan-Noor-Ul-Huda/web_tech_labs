@@ -79,8 +79,8 @@ function calculateFinalPrice(basePrice, taxRate, discountPercentage)
    let tax=discountedPrice*(taxRate/100);
    tax=Number(tax.toFixed(2));
    let finalPrice=Number((discountedPrice+tax).toFixed(2));
-   let loyalityPoints=Math.ceil(finalPrice);
-   return {loyalityPoints,finalPrice};
+   let loyaltyPoints=Math.ceil(finalPrice);
+   return {loyaltyPoints,finalPrice};
 
 }
 function paginateData(items, pageNumber, pageSize=5)
@@ -129,11 +129,11 @@ console.log("99: ",addUp(99));
 console.log("------task 4------");
 console.log(progressBar(40));
 console.log("-----task 5--------");
-arr=[-76,435,76,34,7,-54,65,23,3]
+const arr=[-76,435,76,34,7,-54,65,23,3]
 console.log(minMax(arr))
 console.log("-----task 6--------");
 const repos = [ { name: 'repo-a', stars: 12 }, { name: 'repo-b', stars: 45 }, { name: 'repo-c', stars: 3 } ];
-calculateRepoStats(repos);
+console.log(calculateRepoStats(repos));
 console.log("-------task 7-----")
 console.log(calculateFinalPrice(1000,10,10));
 console.log("------task 8----");
